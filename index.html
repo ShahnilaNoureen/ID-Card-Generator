@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ID Card Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Form Section -->
+    <form id="idForm">
+      <h2>Employee Information</h2>
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter full name" required><br>
+
+      <label for="idnumber">ID Number</label>
+      <input type="text" id="employeeId" placeholder="Enter ID number" required><br>
+
+      <!-- Department Dropdown -->
+      <label for="Department">Department</label>
+      <select name="department" id="department" required>
+        <option value="" disabled selected hidden>Select Department</option>
+        <option value="Human Resources">Human Resources</option>
+        <option value="Finance">Finance</option>
+        <option value="Marketing & Sales">Marketing & Sales</option>
+        <option value="Operations & Production">Operations & Production</option>
+        <option value="Administration">Administration</option>
+        <option value="Information Technology (IT)">Information Technology (IT)</option>
+        <option value="Customer Service">Customer Service</option>
+      </select>
+      <br>
+
+      <!-- Designation Dropdown -->
+      <label for="Designation">Designation</label>
+      <select name="designation" id="designation" required>
+        <option value="" disabled selected hidden>Select Designation</option>
+        <optgroup label="Human Resources">
+          <option>HR Assistant</option>
+          <option>HR Executive</option>
+          <option>HR Manager</option>
+          <option>Recruitment Specialist</option>
+          <option>Training & Development Officer</option>
+          <option>HR Business Partner</option>
+          <option>Compensation & Benefits Specialist</option>
+        </optgroup>
+        <optgroup label="Finance">
+          <option>Accounts Assistant</option>
+          <option>Accountant</option>
+          <option>Finance Officer</option>
+          <option>Financial Analyst</option>
+          <option>Finance Manager</option>
+          <option>Internal Auditor</option>
+          <option>Chief Financial Officer (CFO)</option>
+        </optgroup>
+        <optgroup label="Marketing & Sales">
+          <option>Marketing Coordinator</option>
+          <option>Marketing Executive</option>
+          <option>Digital Marketing Specialist</option>
+          <option>Sales Executive</option>
+          <option>Sales Manager</option>
+          <option>Business Development Manager</option>
+          <option>Brand Manager</option>
+        </optgroup>
+        <optgroup label="Operations & Production">
+          <option>Operations Assistant</option>
+          <option>Production Supervisor</option>
+          <option>Operations Executive</option>
+          <option>Supply Chain Coordinator</option>
+          <option>Quality Control Officer</option>
+          <option>Plant/Factory Manager</option>
+          <option>Operations Manager</option>
+        </optgroup>
+        <optgroup label="Administration">
+          <option>Office Assistant</option>
+          <option>Administrative Officer</option>
+          <option>Admin Executive</option>
+          <option>Front Desk Officer / Receptionist</option>
+          <option>Facilities Manager</option>
+          <option>Office Manager</option>
+          <option>Administrative Manager</option>
+        </optgroup>
+        <optgroup label="Information Technology (IT)">
+          <option>IT Support Officer</option>
+          <option>Network Administrator</option>
+          <option>Software Developer</option>
+          <option>Web Developer</option>
+          <option>Database Administrator</option>
+          <option>Systems Analyst</option>
+          <option>IT Manager / CTO</option>
+        </optgroup>
+        <optgroup label="Customer Service">
+          <option>Customer Service Representative (CSR)</option>
+          <option>Call Center Agent</option>
+          <option>Helpdesk Support</option>
+          <option>Customer Support Executive</option>
+          <option>Team Lead (Customer Service)</option>
+          <option>Customer Experience Manager</option>
+          <option>Client Relationship Manager</option>
+        </optgroup>
+      </select>
+      <br>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="Enter phone number" required><br>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter email" required><br>
+
+      <label for="joindate">Joining Date</label>
+      <input type="date" id="joindate" required><br>
+
+      <label for="picture">Upload Picture</label>
+      <input type="file" id="photo" accept="image/*" required><br>
+
+      <button type="button" id="generateBtn">Generate ID Card</button>
+    </form>
+
+    <!-- ID Card Section -->
+    <div id="idCard" class="id-card" style="display:none;">
+      <div class="header">TechTrove Innovations</div>
+      <img src="" alt="Employee Photo" id="cardPhoto">
+      <h2 id="cardName"></h2>
+      <h3 id="cardDesignation"></h3>
+      <b><p id="cardEmployeeId"></p></b>
+      <b><p id="cardDepartment"></p></b>
+      <b><p id="cardPhone"></p></b>
+      <b><p id="cardEmail"></p></b>
+      <b><p id="cardJoinDate"></p></b>
+      <div class="footer">Employee ID Card</div>
+      
+    </div>
+  </div>
+
+  <!-- Optional: html2canvas for download -->
+
+  <script src="script.js"></script>
+</body>
+</html>

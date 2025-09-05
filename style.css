@@ -1,0 +1,167 @@
+/* Body */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f0f2f5, #d9e2ec);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Container */
+.container {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Styling */
+form h2 {
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #1f3c88;
+}
+
+label {
+  display: block;
+  margin: 12px 0 5px;
+  font-weight: 600;
+  text-align: left;
+  color: #1f3c88;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #c0cbdc;
+  margin-bottom: 18px;
+  font-size: 1rem;
+  background: #f9f9f9;
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+input:focus, select:focus {
+  border-color: #1f3c88;
+  box-shadow: 0 0 8px rgba(31, 60, 136, 0.3);
+  outline: none;
+}
+
+/* Options Styling */
+select option, optgroup {
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Button Styling */
+button {
+  background: linear-gradient(135deg, #1f3c88, #3f6fd1);
+  color: #fff;
+  border: none;
+  padding: 14px 25px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #3f6fd1, #1f3c88);
+  transform: scale(1.05);
+}
+
+/* ID Card Styling */
+.id-card {
+  width: 360px;
+  height: 500px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  margin: 20px auto;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  color: #1f3c88;
+  font-family: 'Arial', sans-serif;
+  border: 1px solid #c0cbdc;
+}
+
+/* Header */
+.id-card .header {
+  background: linear-gradient(135deg, #1f3c88, #3f6fd1);
+  color: #fff;
+  padding: 20px 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* Employee Picture */
+.id-card img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid #3f6fd1;
+  object-fit: cover;
+  margin: 25px auto 15px;
+  display: block;
+  box-shadow: 0 5px 15px rgba(31, 60, 136, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.id-card img:hover {
+  transform: scale(1.05);
+}
+
+/* Name & Designation */
+.id-card h2 {
+  font-size: 1.6rem;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.id-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #3f6fd1;
+}
+
+/* Details */
+.id-card p {
+  margin: 6px 0;
+  font-size: 1rem;
+  text-align: left;
+  padding-left: 30px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Footer */
+.id-card .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f1f4f8;
+  padding: 12px 0;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1f3c88;
+}
